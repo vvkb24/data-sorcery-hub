@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
+import { ArrowRight } from 'lucide-react';
 
 interface ServiceCardProps {
   title: string;
@@ -42,17 +43,15 @@ const ServiceCard = ({ title, description, icon, link, index }: ServiceCardProps
         
         <Link 
           to={link} 
-          className="inline-flex items-center text-data-blue font-medium group-hover:translate-x-1 transition-transform duration-300"
+          className="inline-flex items-center text-data-blue font-medium transition-all duration-300 hover:text-data-blue/80"
         >
           Learn More
-          <svg 
-            className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" 
-            fill="none" 
-            viewBox="0 0 24 24" 
-            stroke="currentColor"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-          </svg>
+          <ArrowRight 
+            className={cn(
+              "ml-2 w-4 h-4 transition-transform duration-300",
+              isHovered ? "translate-x-1" : ""
+            )} 
+          />
         </Link>
         
         {/* Decorative background element */}

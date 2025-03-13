@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
+import { CheckCircle } from 'lucide-react';
 
 interface CaseStudyProps {
   title: string;
@@ -34,12 +35,10 @@ const CaseStudy = ({ title, company, description, results, image, index }: CaseS
         
         <div className="space-y-3">
           <h4 className="font-medium text-gray-900">Key Results:</h4>
-          <ul className="space-y-2">
+          <ul className="space-y-3">
             {results.map((result, i) => (
               <li key={i} className="flex items-start">
-                <div className="mt-1 mr-3 w-4 h-4 rounded-full bg-data-blue/20 flex items-center justify-center">
-                  <div className="w-2 h-2 rounded-full bg-data-blue"></div>
-                </div>
+                <CheckCircle className="h-5 w-5 text-data-teal mr-3 flex-shrink-0" />
                 <span className="text-gray-600">{result}</span>
               </li>
             ))}
@@ -48,13 +47,13 @@ const CaseStudy = ({ title, company, description, results, image, index }: CaseS
       </div>
       
       <div className="lg:w-1/2 relative">
-        <div className="aspect-video w-full overflow-hidden rounded-xl relative bg-gray-100">
+        <div className="aspect-video w-full overflow-hidden rounded-xl relative bg-gray-100 shadow-md transition-all duration-300 hover:shadow-lg">
           <img
             src={image}
             alt={title}
             className={cn(
-              "w-full h-full object-cover", 
-              imageLoaded ? "loaded" : ""
+              "w-full h-full object-cover transition-all duration-700", 
+              imageLoaded ? "opacity-100" : "opacity-0"
             )}
             onLoad={() => setImageLoaded(true)}
           />
