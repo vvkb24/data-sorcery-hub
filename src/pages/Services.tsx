@@ -25,7 +25,7 @@ const Services = () => {
       id: 'datasets',
       title: 'Curated Datasets',
       description: 'Access high-quality, 99.9% accurate data collected through comprehensive surveys and rigorous validation.',
-      longDescription: 'Our dataset services provide organizations with access to high-quality, rigorously validated data that's 99.9% accurate. We collect information through comprehensive surveys and multiple validation steps to ensure you have the most reliable foundation for your data science projects. Whether you need consumer behavior insights, market trends, or specialized industry data, our curated datasets save you time and resources while maximizing analytical accuracy.',
+      longDescription: 'Our dataset services provide organizations with access to high-quality, rigorously validated data that\'s 99.9% accurate. We collect information through comprehensive surveys and multiple validation steps to ensure you have the most reliable foundation for your data science projects. Whether you need consumer behavior insights, market trends, or specialized industry data, our curated datasets save you time and resources while maximizing analytical accuracy.',
       icon: <Database className="w-6 h-6" />,
       features: [
         'Verified data accuracy of 99.9%',
@@ -53,7 +53,7 @@ const Services = () => {
       id: 'team',
       title: 'Data Science Team',
       description: 'Work with our expert data scientists who can tailor custom solutions to your unique business challenges.',
-      longDescription: 'Our team of expert data scientists brings decades of combined experience to your projects. When off-the-shelf solutions aren't enough, our specialists work closely with your organization to develop custom data solutions that address your unique challenges. From initial consultation through implementation and beyond, we partner with you to ensure your data initiatives deliver measurable value and competitive advantage.',
+      longDescription: 'Our team of expert data scientists brings decades of combined experience to your projects. When off-the-shelf solutions aren\'t enough, our specialists work closely with your organization to develop custom data solutions that address your unique challenges. From initial consultation through implementation and beyond, we partner with you to ensure your data initiatives deliver measurable value and competitive advantage.',
       icon: <Users className="w-6 h-6" />,
       features: [
         'PhD-level data scientists with industry experience',
