@@ -1,4 +1,4 @@
-## This website is a prototype; the content is Al-generated, unverified, and does not reflect real or accurate data.
+## This website is a prototype; the content is partiallyAl-generated, unverified, and does not reflect real or accurate data.
 ## The project is featured on my GitHub page because the concept is my original idea, and I strongly believe in its potential
 
 
